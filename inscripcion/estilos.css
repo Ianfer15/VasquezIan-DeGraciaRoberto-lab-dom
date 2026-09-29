@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+.contenedor {
+    width: min(700px, 92%);
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.intro {
+    margin-top: 0;
+    color: #666;
+}
+
+.campo,
+fieldset,
+.terminos {
+    margin-top: 20px;
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 7px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.error {
+    min-height: 20px;
+    margin: 5px 0 0;
+    color: #c62828;
+    font-size: 0.9rem;
+}
+
+.invalido {
+    border-color: #c62828;
+}
+
+#fuerza,
+#contador {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#contador.limite {
+    color: #c62828;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: 0;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.tarjeta-confirmacion {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    background: #f7f7f7;
+}
+
+.tarjeta-confirmacion h2 {
+    margin-top: 0;
+}
+
+.tarjeta-confirmacion p {
+    margin: 8px 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    fieldset label {
+        display: block;
+    }
+}
